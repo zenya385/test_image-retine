@@ -1,0 +1,33 @@
+.hero {
+  height: 50vh;
+  padding: 100px 50px;
+  background-image: url(img/first-man.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(img/first-man@2x.jpg);
+  }
+
+  @media (min-width: 768px) {
+    background-image: url(img/first-man_copy.jpg);
+  }
+  @media (min-width: 768px) and (min-device-pixel-ratio: 2),
+    (min-width: 768px) and (min-resolution: 192dpi),
+    (min-width: 768px) and (min-resolution: 2dppx) {
+    background-image: url(img/first-man@2x_copy.jpg);
+  }
+  @media (min-width: 1200px) {
+    background-image: url(img/first-man_copy_2.jpg);
+  
+  @media (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    (min-width: 1200px) and (min-resolution: 192dpi),
+    (min-width: 1200px) and (min-resolution: 2dppx) {
+    background-image: url(img/first-man@2x_copy_2.jpg);
+  }
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
